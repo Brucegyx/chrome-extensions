@@ -1,0 +1,33 @@
+{ 
+
+	"name": "Add Bookmark Extensions",
+	
+	"version": "2.1",
+	"manifest_version": 2,
+	"browser_action": {
+		//"default_popup": "bookmark.html",
+		"defalut_icon": "bookmarkimg.png"
+	},
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    /*"commands": {
+        "_execute_browser_action": {
+            "suggest_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+Z"
+            },
+            "description":"Opens hello.html"
+        }
+    },
+    */
+    "permissions": [
+        "bookmarks",
+        "tabs"
+    ]
+    
+    
+    
+}
+
